@@ -183,7 +183,7 @@ input:focus{
     outline: none;
 }
 
-input:invalid{
+input[type="password"]:invalid{
   border: 1px red solid;
 }
 
