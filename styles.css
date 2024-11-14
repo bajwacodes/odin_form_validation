@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('Norse-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  /*#########################################
+  ###########################################
+  ########### PROJECT STARTS HERE ######## */
+
+  body{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+.box-1{
+    background: url(greenLeaf.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 60%;
+    /* border: 5px red solid; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}  
+
+.odin-logo{
+    width: 20%;
+}
+
+.odin-box{
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11rem;
+
+    background-color: hsl(0, 0%, 0%, 0.5);
+    padding: 1rem;
+    width: 100%;
+
+    /* border: 3px blue solid; */
+
+}
+
+.odin-box p {
+    font-family: 'NorseBold', sans-serif;
+    font-size: 5rem;
+}
+
+.credits a{
+    color: white;
+}
+
+.credits{
+    color: white;
+    padding: .5rem;
+    font-size: .9rem;
+    font-weight: 100;
+
+    /* border: 3px blue solid; */
+
+}
+
+.box-2{
+    min-height: 100vh;
+
+    /* border: 3px blue solid; */
+}
+
+.top{
+    background-color: rgb(247, 247, 247);
+    font-size: 1.2rem;
+    /* border: 3px red solid; */
+
+    padding: 7rem 2rem 4.4rem 2rem;
+    font-weight: bold;
+}
+
+.top p {
+    width: 85%;
+}
+
+.lil-txt{
+    margin-top: 2rem;
+}
+
+.mid {
+    /* border: 3px red solid; */
+    padding: 1rem 2rem 2rem 2rem;
+
+    display: flex;
+    gap: 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.mid p{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+fieldset{
+  border: none;
+  padding: 0;
+
+  display: flex;
+  gap: 4rem;
+
+  padding-top: 1rem;
+}
+
+input{
+  display: block;
+  border: #E5E7EB 1px solid;
+}
+
+input:focus{
+    border: blue 1px solid;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);   
+    outline: none;
+}
+
+input:invalid{
+  border: 1px red solid;
+}
+
+label{
+  text-transform: uppercase;
+  /* font-weight: 600; */
+  font-size: 0.7rem;
+  letter-spacing: .1rem;
+}
+
+.end{
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+button{
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
+  border: none;
+
+  padding: .6rem 2.5rem;
+  margin-top: 1rem;
+  border-radius: .5rem;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
+  cursor: pointer;
+}
+
+.login-txt{
+  margin-top: 1.5rem;
+}
+
+.login-txt a{
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
